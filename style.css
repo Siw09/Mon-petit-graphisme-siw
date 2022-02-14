@@ -1,0 +1,511 @@
+/* General */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    width: 90%;
+}
+
+.container
+{
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img
+{
+    margin-bottom: 3px;
+}
+
+header nav ul li
+{
+    list-style-type: none;
+    display: inline;
+    margin-right: 25px;
+
+}
+
+header nav
+{
+    margin-right: -20px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li
+{
+    font-size: 20px;
+}
+
+a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+a:hover{
+
+    color: #6d009e ;
+    transform: scale(1.2px);
+    
+}
+/* Banniere */
+
+.banniere
+{
+    margin-top: -3px;
+    background : url("img/backgroung_image.jpg") 100% no-repeat ;
+    height: 700px;
+ }
+
+.banniere h1
+{
+    text-align: center;
+    color: white;
+    padding: 20 0 0 0;
+    font-size: 3em;
+
+}
+
+.container .banniere img
+{   
+    height: 90px;
+    width: 300px;
+    margin: auto auto;
+    display: flex;
+    vertical-align: center;
+    padding-top: 270px;
+}
+
+/* Offre */
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+}
+
+.descriptif
+{
+    box-sizing: content-box;
+}
+
+section .presentation
+{
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 50px 0 25px 0;
+
+}
+
+section .presentation h2
+{
+    font-weight: lighter;
+}
+
+#offre ul #graphisme
+{
+    height: 250px;
+    width: 230px;
+}
+
+#offre ul #strategie
+{
+    height: 250px;
+    width: 230px;
+}
+
+#offre ul #illustrations
+{
+    height: 250px;
+    width: 230px;
+}
+#offre ul
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 50px 0 0 0;
+
+}
+
+#offre ul li
+{
+    width: 350px;
+    height: 300px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    margin:0 25px;
+
+}
+
+#offre ul h3
+{
+    text-transform: uppercase;
+}
+
+#offre ul p
+{
+    font-size: 0.9em;
+}
+
+.avis .texte, .nom
+{
+    text-align: center;
+}
+
+.avis .texte
+{
+    font-size: 1.5em;
+}
+.avis .nom
+{
+    font-size: 0.9em;
+    padding-bottom: 30px;
+}
+
+
+
+
+/* Footer */
+
+footer
+{
+    background-color: #6d009e;
+    padding: 50px 0;
+    height: 220px;
+}
+
+.liens
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+
+
+footer h4
+{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+footer h3
+{
+    text-transform: uppercase;
+}
+
+.fab
+{
+    font-size: 50px;
+    margin:0 50px;
+    color: #fff;
+    padding-top: 15px;
+
+}
+
+.fab:hover
+{
+    color: blue;
+}
+
+.links
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li
+{
+    color: #fff;
+}
+
+footer p
+{
+    color: #fff;
+}
+
+footer .titre
+{
+    color: silver;
+    padding-bottom: 9px;
+    text-align: justify;
+}
+
+
+
+/* Gestion de la  Responsivité du site  */
+
+@media screen and ( max-width:700px ) { 
+
+    body{
+        margin: auto;
+        width: 95%;
+    }
+    
+    .container
+    {
+        box-sizing: border-box;
+    }
+    
+    /* Header */
+    
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    
+     
+    
+    header nav
+    {
+        margin: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    header nav ul li
+    {
+        width: 40% ;
+        font-size: 20px;
+        margin: 2px 40px;
+    }
+    
+    a
+    {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        
+    
+    }
+    
+    a:hover{
+
+        color: #6d009e ;
+        padding-bottom: 20px;
+        border-bottom: solid #6d009e 2px;
+    }
+    /* Banniere */
+    
+    .banniere
+    {
+        margin-top: -3px;
+        background: url(img/backgroung_image_min.jpg) 51% no-repeat;
+        height: 300px;
+
+        height: 400px;
+     }
+     
+.container .banniere img
+{   
+    height: 90px;
+    width: 300px;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    padding-top: 110px;
+}
+    
+     
+    /* Offre */
+    
+    section
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+    }
+    
+    .descriptif
+    {
+        box-sizing: content-box;
+    }
+    
+    section .presentation
+    {
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding: 50px 0 25px 0;
+    
+    }
+    
+    section .presentation h2
+    {
+        font-weight: lighter;
+    }
+    
+    #offre ul #graphisme
+    {
+        
+            height: 150px;
+            width: 250px;
+        
+    }
+    
+    #offre ul #strategie
+    {
+        height: 150px;
+        width: 250px;
+    }
+    
+    #offre ul #illustrations
+    {
+        height: 150px;
+        width: 250px;
+    }
+    #offre ul
+    {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        padding: 10px 0 0 0;
+    
+    }
+    
+    #offre ul li
+    {
+        width: 300px;
+        height: 400px;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 0;
+        margin:0 25px;
+    
+    }
+    
+    #offre ul h3
+    {
+        text-transform: uppercase;
+    }
+     
+    
+    .avis .texte, .nom
+    {
+        text-align: center;
+    }
+    
+    .avis .texte
+    {
+        font-size: 1.5em;
+        text-align: justify;
+        margin: 0px 30px;
+        letter-spacing: 0.1px;
+    }
+    .avis .nom
+    {
+        font-size: 0.9em;
+        padding-bottom: 30px;
+    } 
+    
+    
+    
+    /* Footer */
+    
+    footer
+    {
+        background-color: #6d009e; 
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 220px;
+    }
+    
+    .liens
+    { 
+        display: flex;        
+        flex-wrap: wrap;
+         
+       justify-content: space-around;
+         } 
+    
+    footer h4
+    { 
+        color: #fff;
+        font-size: 1rem;
+        padding-top: 20px;
+    }
+    .acces, .propos, .coordonees{
+        width: 25%; 
+        padding-left: 30px;
+        margin: auto;
+        margin-bottom: 30px;
+        
+    }
+    .acces{
+        margin-top: 0px;
+    }
+     
+    
+    .fab
+    {   
+        margin:0 50px;
+        color: #fff;
+        padding-top: 0px;
+       ;
+    
+    }
+    
+    .fab:hover
+    {
+        background-color: #fff; 
+        color: #6d009e;
+    }
+    
+    .links
+    {
+        display: flex;
+        justify-content: center;
+    }
+      
+    
+    footer .titre
+    {
+        color: silver;
+        padding: 9px 0px;
+        text-align: justify;
+    }
+    
+
+
+
+
+
+
+    
+}
